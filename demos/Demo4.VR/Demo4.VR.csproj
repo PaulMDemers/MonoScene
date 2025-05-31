@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
  <PropertyGroup>
-    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <OutputType>Exe</OutputType>
     <UseWindowsForms>true</UseWindowsForms>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.WindowsDX.9000" Version="3.8.9102" />
+    <PackageReference Include="MonoGame.Framework.WindowsDX.9000" Version="3.8.*" />
     <PackageReference Include="nkast.Xna.Framework.Oculus.OvrDX11" Version="3.8.9102" />
     <PackageReference Include="nkast.LibOVR" Version="1.0.0" />    
   </ItemGroup>  
