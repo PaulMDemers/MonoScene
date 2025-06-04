@@ -87,6 +87,12 @@ namespace MonoScene.Graphics.Pipeline
                 case "BaseColor":
                 case "SpecularGlossiness":
                     return new float[] { val.X, val.Y, val.Z, val.W };
+                    
+                case "SpecularColor":
+                    return new float[] { val.X, val.Y, val.Z };
+
+                case "SpecularFactor":
+                    return new float[] { val.W };
             }
 
             throw new NotImplementedException();

@@ -37,7 +37,13 @@ namespace MonoScene.Graphics.Content
                     return new float[] { 1, 1 }; // R:Metallic G:Roughness
 
                 case "SpecularGlossiness":
-                    return new float[] { 1, 1, 1, 1 }; // RGB:Specular, A:Glossiness                
+                    return new float[] { 1, 1, 1, 1 }; // RGB:Specular, A:Glossiness      
+
+                case "SpecularColor":
+                    return new float[] { 1, 1, 1 }; // RGB (default = white)
+
+                case "SpecularFactor":
+                    return new float[] { 1 }; // scalar intensity       
             }
 
             throw new NotImplementedException();
